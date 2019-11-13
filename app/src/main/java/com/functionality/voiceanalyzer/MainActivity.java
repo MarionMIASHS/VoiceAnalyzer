@@ -45,11 +45,13 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = "AUDIO_RECORD";
     private SharedPreferences mPreferences;
-    private String id = "NOT_INITIALIZED";
+    private String id = ParametersCollection.IDnotInitialized;
     private EditText ID;
     private Button btnRecord;
     private Button btnShowText;
     private Button btnInfo;
+    private Button btnUserAgreement;
+
     private Chronometer CLK;
     private MediaRecorder recorder = null;
     private String currentFilename;
@@ -207,12 +209,14 @@ public class MainActivity extends AppCompatActivity {
         /**UI instantiated here**/
         ID = findViewById(R.id.id);
         btnRecord = findViewById(R.id.btn_record);
+        btnRecord.setEnabled(false);
         btnShowText = findViewById(R.id.btn_showtext);
         btnInfo = findViewById(R.id.btn_info);
         CLK = findViewById(R.id.clk);
 
+        btnUserAgreement = findViewById(R.id.btn_agree);
 
-        if (!id.equals("NOT_INITIALIZED"))
+        if (!id.equals(ParametersCollection.IDnotInitialized))
             ID.setText(id);
 
         /**Instantiate intent to launch service**/
@@ -293,6 +297,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 displayTermOfUse();
+            }
+        });
+
+        btnUserAgreement.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (id.compareTo(ParametersCollection.IDnotInitialized) !=0)
+                    btnRecord.setEnabled(true);
+                btnUserAgreement.setEnabled(false);
+                btnUserAgreement.setText("Agreement registered");
             }
         });
     }
