@@ -49,10 +49,8 @@ public class ParametersCollection {
             "notre recherche. \n"+
             "Conformément aux dispositions de la loi Informatique et Libertés, les participants disposent du droit à demander " +
             "la suppression de leurs données. Si tel était le cas, il vous suffit de contacter la doctorante Marion Kissous " +
-            ": marion.kissous@mines-ales.fr\n"+
-            "Les données recueillies seront stockées sur un serveur sécurisé de IMT Mines Alès avec une clé qui vous sera " +
-            "remise lors de la distribution de l'application et du lancement de l'étude.\n" +
-            "Il ne sera donc pas possible à l'équipe de recherche de vous identifier nominativement.\n"+
+            ": marion.kissous@mines-ales.fr ou par téléphone au 06 69 18 12 70.\n"+
+            "Les données recueillies seront stockées sur un serveur Google (Firebase) puis sur un serveur OVH dédié et sécurisé.\n" +
             "Le stockage et la sauvegarde de ces données se fera sur les serveurs sécurisés des laboratoires engagés dans " +
             "cette recherche. Seuls la doctorante et son équipe encadrante auront un accès direct aux données. " +
             "Vous pourrez nous solliciter si vous souhaitez connaître les résultats de cette étude et vous aider à les " +
@@ -80,7 +78,8 @@ public class ParametersCollection {
             "\n" +
             "« J’accepte de participer à cette présente recherche ce qui présuppose d’utiliser les applications demandées " +
             "(StepAnalyzer, LocationTracker & VoiceAnalyzer) ainsi que de répondre aux questionnaires pour lesquels je " +
-            "serais sollicité(e)».\n";
+            "serais sollicité(e) ».\n" +
+            "« J’accepte que mes données fassent l'objet d'un traitement statistique dans le cadre de cette recherche. ».";
     public static final String TEXT_TO_READ = "L'enregistrement se lance automatiquement.\n" +
             "Pour l'arrêter il vous suffit de revenir en arrière et d'appuyer sur le bouton Stop Recording.";
     public static final String TITLE_READ = "Merci de décrire votre journée en quelques phrases.\n";
@@ -120,10 +119,8 @@ public class ParametersCollection {
             "notre recherche. \n"+
             "Conformément aux dispositions de la loi Informatique et Libertés, les participants disposent du droit à demander " +
             "la suppression de leurs données. Si tel était le cas, il vous suffit de contacter la doctorante Marion Kissous " +
-            ": marion.kissous@mines-ales.fr\n"+
-            "Les données recueillies seront stockées sur un serveur sécurisé de IMT Mines Alès avec une clé qui vous sera " +
-            "remise lors de la distribution de l'application et du lancement de l'étude.\n" +
-            "Il ne sera donc pas possible à l'équipe de recherche de vous identifier nominativement.\n"+
+            ": marion.kissous@mines-ales.fr ou par téléphone au 06 69 18 12 70.\n"+
+            "Les données recueillies seront stockées sur un serveur Google (Firebase) puis sur un serveur OVH dédié et sécurisé.\n" +
             "Le stockage et la sauvegarde de ces données se fera sur les serveurs sécurisés des laboratoires engagés dans " +
             "cette recherche. Seuls la doctorante et son équipe encadrante auront un accès direct aux données. " +
             "Vous pourrez nous solliciter si vous souhaitez connaître les résultats de cette étude et vous aider à les " +
@@ -151,7 +148,8 @@ public class ParametersCollection {
             "\n" +
             "« J’accepte de participer à cette présente recherche ce qui présuppose d’utiliser les applications demandées " +
             "(StepAnalyzer, LocationTracker & VoiceAnalyzer) ainsi que de répondre aux questionnaires pour lesquels je " +
-            "serais sollicité(e)».\n";
+            "serais sollicité(e)».\n" +
+            "« J’accepte que mes données fassent l'objet d'un traitement statistique dans le cadre de cette recherche. ».";
     public static final String TITLE_LEGAL = "Term of Use";
 
     public static final SimpleDateFormat dfYear = new SimpleDateFormat("YYYY");
